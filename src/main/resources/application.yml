@@ -1,0 +1,20 @@
+server:
+  port: 6200
+#security:
+#  rest:
+#    user: admin
+#    password: 123
+spring:
+  datasource:
+    #username: admin
+    #password: team2020PERU
+    #url: jdbc:mysql://db-haya-vuelve.cg73jp9y7oht.us-east-2.rds.amazonaws.com:3306/hayavuelve_test
+    username: root
+    password: mysql
+    url: jdbc:mysql://localhost/dbeveris?autoReconnect=true&useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
